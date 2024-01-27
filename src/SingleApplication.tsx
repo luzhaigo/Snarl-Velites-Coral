@@ -17,11 +17,11 @@ const SingleApplication = ({ application }) => {
         <span className={styles.email}>{application.email}</span>
       </div>
       <div className={styles.cell}>
-        <sub>Loan Amount</sub>
+        <sub>Loan amount</sub>
         {application.loan_amount}
       </div>
       <div className={styles.cell}>
-        <sub>Application Date</sub>
+        <sub>Application date</sub>
         {application.date_created}
       </div>
       <div className={styles.cell}>
