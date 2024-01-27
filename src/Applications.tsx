@@ -1,14 +1,13 @@
 import React from "react";
 import SingleApplication from "./SingleApplication";
-import { getSingleApplicationFixture } from "./__fixtures__/applications.fixture";
 import styles from "./Applications.module.css";
 
-const Applications = () => {
-  const applications = getSingleApplicationFixture;
-
+const Applications = ({ apps }) => {
   return (
     <div className={styles.Applications}>
-      <SingleApplication application={applications[0]} />
+      {apps.map(app => (
+        <SingleApplication key={app.id} application={app} />
+      ))}
     </div>
   );
 };
